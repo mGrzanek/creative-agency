@@ -1,7 +1,7 @@
 {
   "name": "creative-company",
   "version": "1.0.0",
-  "description": "This is simple and responsive website based on HTML and CSS. The project also uses flexbox, small animations and media queries.",
+  "description": "This is simple and responsive website based on HTML and CSS with flexbox, pseudo-element positioning, small animations and media queries.",
   "main": "index.html",
   "scripts": {
     "init-project": "npm install && npm-run-all init:*",

@@ -349,3 +349,48 @@ section {
         }
     }
 }
+
+/* Footer */
+
+footer {
+    margin: 0;
+    padding: 48px 0;
+    
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        
+        li {
+            
+            border: 2px solid $color-pink;
+            border-radius: 50%;
+            height: 60px;
+            width: 60px;
+            line-height: 60px;
+            padding-top: 10px;
+            margin: 0 10px;
+            background: $color-pink;
+            transition: $transition;
+            font-size: 0;
+            
+            
+            i {
+                
+                height: 100%;
+                width: 100%;
+                font-size: 30px;
+                text-align: center;
+                color: $color-white;
+                
+            }
+            
+            &:hover {
+                scale: 1.2;
+            }
+        }
+    }
+}

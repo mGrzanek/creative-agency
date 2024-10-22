@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Signika:wght@700&display=swap');
+
+/* Variables */
+$color-blue:#0097e6;
+$color-green: #33d9b2;
+$color-red: #ff5252;
+$color-white: #ffffff;
+$color-dark: #2c2c54;
+$color-pink: #ff7675;
+
+$family-font-signika: "Signika", sans-serif;
+$family-font-inconsolata: "Inconsolata", monospace;
+
+/* Global */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: $family-font-inconsolata;
+    color: $color-dark;
+    background: $color-white;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+/* Navigation */
+
+.navigation {
+    background: $color-blue;
+    padding: 12px 0; 
+    
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        
+        ul {
+            display: none;
+            position: absolute;
+            background: white;
+            left: 50%;
+            transform: translateX(-50%);
+            
+            li {
+                display: block;
+                margin: 0 0 12px 0;
+            }   
+            
+            a {
+                color: $color-blue;
+                display: block;
+                padding: 0 24px;
+                
+                &:hover {
+                    color: $color-green;
+                }
+            }
+        }
+    }
+    
+    li {
+        display: inline-block;
+        margin-right: 36px;
+        position: relative;
+        
+        &:hover ul {
+            display: block;
+        }
+    }
+    
+    a {
+        text-decoration: none;
+        color: $color-white;
+        
+        &:hover {
+            color: $color-green;
+        }
+    }
+}
